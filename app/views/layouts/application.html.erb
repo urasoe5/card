@@ -4,7 +4,6 @@
     <title>orakurucard</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" type="text/css" href="base.css">
@@ -14,21 +13,17 @@
     <div>
       <ul class="headr-list">
         <div>
-          <li class="botan"><a href="index"><img src="img/botan_top.png" border="0" onMouseOver="this.src='../img/botan_top_2.png'" onMouseOut="this.src='../img/botan_top.png'" /></a></li>
-          <li class="botan"><a href="conference"><img src="img/botan_kaigi.png" border="0" onMouseOver="this.src='../img/botan_kaigi_2.png'" onMouseOut="this.src='../img/botan_kaigi.png'" /></a></li>
-          <li class="botan"><a href="incense"><img src="img/botan_okou.png" border="0" onMouseOver="this.src='../img/botan_okou_2.png'" onMouseOut="this.src='../img/botan_okou.png'" /></a></li>
-          <li class="botan"><a href="counseling"><img src="img/botan_sessyon.png" border="0" onMouseOver="this.src='../img/botan_sessyon_2.png'" onMouseOut="this.src='../img/botan_sessyon.png'" /></a></li>
-          <li class="botan"><a href="oracle"><img src="img/botan_uranai.png" border="0" onMouseOver="this.src='../img/botan_uranai_2.png'" onMouseOut="this.src='../img//botan_uranai.png'" /></a></li>
-          <li class="botan"><a href="video"><img src="img/botan_vido.png" border="0" onMouseOver="this.src='../img/botan_vido_2.png'" onMouseOut="this.src='../img/botan_vido.png'" /></a></li>
-          <li class="botan"><a href="question"><img src="img/botan_situmon.png" border="0" onMouseOver="this.src='../img/botan_situmon_2.png'" onMouseOut="this.src='../img/botan_situmon.png'" /></a></li>
+          <li class="botan"><a href="index"><img src="img/botan_top.png" border="0" onMouseOver="this.src='img/botan_top_2.png'" onMouseOut="this.src='img/botan_top.png'" /></a></li>
+          <li class="botan"><a href="conference"><img src="img/botan_kaigi.png" border="0" onMouseOver="this.src='img/botan_kaigi_2.png'" onMouseOut="this.src='img/botan_kaigi.png'" /></a></li>
+          <li class="botan"><a href="incense"><img src="img/botan_okou.png" border="0" onMouseOver="this.src='img/botan_okou_2.png'" onMouseOut="this.src='img/botan_okou.png'" /></a></li>
+          <li class="botan"><a href="counseling"><img src="img/botan_sessyon.png" border="0" onMouseOver="this.src='img/botan_sessyon_2.png'" onMouseOut="this.src='img/botan_sessyon.png'" /></a></li>
+          <li class="botan"><a href="oracle"><img src="img/botan_uranai.png" border="0" onMouseOver="this.src='img/botan_uranai_2.png'" onMouseOut="this.src='img//botan_uranai.png'" /></a></li>
+          <li class="botan"><a href="video"><img src="img/botan_vido.png" border="0" onMouseOver="this.src='img/botan_vido.png'" onMouseOut="this.src='img//botan_vido.png'" /></a></li>
+          <li class="botan"><a href="question"><img src="img/botan_situmon.png" border="0" onMouseOver="this.src='img/botan_situmon_2.png'" onMouseOut="this.src='img/botan_situmon.png'" /></a></li>
         </div>
       </ul>
     </div>
     </div>
-    <%=yield %>
-    
-   
-  
+    <%=yield %><!-- box12   <li class="botan"><a href="video"><img src="img/botan_vido.png" border="0" onMouseOver="this.src='img/botan_vido_2.png'" onMouseOut="this.src='img/botan_vido.png'" /></a></li>-->
   </body>
-  
   </html>

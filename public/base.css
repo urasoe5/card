@@ -3,16 +3,13 @@
 
 body {
   background-color: #aa95fd;
-
   }
 
 .body_a {
   max-width: 880px;
   margin:  auto;
   background-color: #aa95fd;
-
   }
-
 h1 {
   width: 400px;
   color: #57daff;
@@ -61,7 +58,7 @@ p {
   display: inline-block;
   padding-top: 5px;
   }
-
+ 
 a {
   text-decoration: none;
   color: #57daff;
@@ -85,7 +82,7 @@ a {
   color: #1b2950;
   }
 
- td {
+td {
   color: #1b2950;
   }
 
@@ -109,7 +106,7 @@ a {
 .i2 {
   margin-top: 40px;
   }
-  
+
 .p {
   margin-top: 0px;
   margin-left: 30px;
@@ -268,7 +265,7 @@ img.profile {
   background-color: #614abe;
   padding-top: 20px;
   }
- 
+
 .box10 {
   width: 880px;
   height: 1410px;
@@ -294,9 +291,9 @@ img.profile {
   position: absolute;
   top: 1600px;
   z-index: 10;
-  background-color: #614abe; 
+  background-color: #614abe; /**/
   padding-bottom: 20px;
-  } /* 1600px  1440px */
+  } /*1600px  1440px */
 
 .box13 {
   width: 880px;
@@ -352,10 +349,9 @@ img.profile {
   position: absolute;
   top: 1400px;
   z-index: 10;
-  background-color: #614abe; 
+  background-color: #614abe; /**/
   padding-bottom: 20px;
-  } /*   */
-
+  } /*1400   1240 */
 
 .px1{
   position: absolute;
