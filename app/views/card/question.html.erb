@@ -24,17 +24,27 @@
    </header>
   <div class="main">
     <div class="contact-form">
+    <form action="question_send" method="post">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
     <h3 class="section-title">お問い合わせ</h3>
+
+    <% if not @error_messages.nil? and @error_messages.size > 0 %>
+      <ul class="contact-error-message">
+        <% @error_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    <% end %>
+    
       <p class="contact-content">メールアドレス（必須）</p>
-        <!-- <input>要素を追加してください -->
-        <input>
+        <input name="email" type="text" value="<%= @email %>">
       <p class="contact-content">お問い合わせ内容（必須）</p>
         <!-- <textarea>要素を追加してください -->
-        <textarea></textarea>
-
+        <textarea name="message"><%= @message %></textarea>
       <p class="contact-content" >※必須項目は必ずご入力ください</p>
         <!-- <input>要素を追加してください -->
         <input class="contact-submit" type="submit">
+    </form>
       </div>
   </div>
 

@@ -1,0 +1,11 @@
+<p>以下のお問い合わせが届きました。</p>
+
+<div>
+  メールアドレス:
+  <%= @email %>
+</div>
+<br>
+<div>
+  お問い合わせ内容:
+  <%= simple_format(h(@message)) %>
+</div>

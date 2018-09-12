@@ -19,13 +19,17 @@ Rails.application.routes.draw do
    
    get "question" => "list#question"
    
+   # お問い合わせ送信
+   post "question_send" => "list#question_send"
+   
    get "video" => "list#video"
    
    get "oracle_b" => "list#oracle_b"
    
    get "counseling_b" => "list#counseling_b"
    
-   
+   # メール送信テスト用
+   mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
    
   end 
 
