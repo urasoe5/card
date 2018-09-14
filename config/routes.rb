@@ -17,10 +17,13 @@ Rails.application.routes.draw do
    
    get "counseling" => "list#counseling"
    
+   # お問い合わせ
    get "question" => "list#question"
-   
-   # お問い合わせ送信
    post "question_send" => "list#question_send"
+   
+   # 大宇宙インセンスご注文
+   get "order" => "list#order"
+   post "order_send" => "list#order_send"
    
    get "video" => "list#video"
    

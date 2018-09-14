@@ -353,6 +353,37 @@ img.profile {
   padding-bottom: 20px;
   } /*1400   1240 */
 
+.box-content {
+  width: 780px;
+  background-color: #9986e2;
+  margin: 0 50px;
+  padding-top: 3px;
+  padding-bottom: 30px;
+  z-index: 1;
+}
+
+.box-bg {
+  /* wrap いっぱいに広げる */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  background-color: #614abe;
+  margin-top: 30px;  /* box-content から下にずらす */
+  z-index: -1;
+}
+
+.box-footer {
+  width: 880px;
+  height: 130px;
+  background-color: #614abe;
+  margin-top: -20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
 .px1{
   position: absolute;
   z-index: 4;
@@ -472,6 +503,17 @@ textarea {
   margin-bottom: 30px;
   padding: 20px;
   font-size: 18px;
+  border: 1px solid;
+  }
+
+input.radio {
+  width: 20px;
+  height: 14px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 20px;
   border: 1px solid;
   }
 

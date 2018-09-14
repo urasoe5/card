@@ -1,0 +1,41 @@
+<p>以下のご注文が届きました。</p>
+
+<div>
+  お名前:
+  <%= @name %>
+</div>
+<br>
+<div>
+  メールアドレス:
+  <%= @email %>
+</div>
+<br>
+<div>
+  郵便番号:
+  <%= @postal_code %>
+</div>
+<br>
+<div>
+  住所:
+  <%= @address %>
+</div>
+<br>
+<div>
+  携帯電話:
+  <%= @tel %>
+</div>
+<br>
+<div>
+  商品:
+  (<%= @product %>)
+  <% if @product == "1" %>
+    大宇宙インセンス香炭&香灰セット　沖縄で手渡し 1,300円 
+  <% elsif @product == "2" %>
+    大宇宙インセンス香炭&香灰セット　発送希望　1,580円
+  <% end %>
+</div>
+<br>
+<div>
+  お問い合わせ内容:
+  <%= simple_format(h(@message)) %>
+</div>
