@@ -1,0 +1,28 @@
+<% content_for :title do %>
+  カード一覧
+<% end %>
+
+<div class="box">
+  <div class="box-header with-border">
+    <div class="pull-left">
+    </div>
+    <div class="pull-right">
+      <%= link_to new_admin_card_path, { class: "btn btn-default btn-sm" } do %>
+        <i class="fa fa-plus"></i>
+        新規作成
+      <% end %>
+    </div>
+  </div>
+  <div class="box-body table-responsive">
+    <table class="table table-borderd table-hover">
+      <thead>
+        <tr>
+          <th>ID
+          <th>画像
+          <th>説明
+          <th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+</div>

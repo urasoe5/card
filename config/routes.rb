@@ -3,36 +3,41 @@ Rails.application.routes.draw do
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-   get "index" => "list#index"
+  get "index" => "list#index"
    
-   get "conference" => "list#conference" 
+  get "conference" => "list#conference" 
    
-   get "conference_b" => "list#conference_b"
+  get "conference_b" => "list#conference_b"
    
-   get "incense" => "list#incense"
+  get "incense" => "list#incense"
    
-   get "incense_b" => "list#incense_b"
+  get "incense_b" => "list#incense_b"
    
-   get "oracle" => "list#oracle"
+  get "oracle" => "list#oracle"
    
-   get "counseling" => "list#counseling"
+  get "counseling" => "list#counseling"
    
-   # お問い合わせ
-   get "question" => "list#question"
-   post "question_send" => "list#question_send"
+  # お問い合わせ
+  get "question" => "list#question"
+  post "question_send" => "list#question_send"
    
-   # 大宇宙インセンスご注文
-   get "order" => "list#order"
-   post "order_send" => "list#order_send"
+  # 大宇宙インセンスご注文
+  get "order" => "list#order"
+  post "order_send" => "list#order_send"
    
-   get "video" => "list#video"
+  get "video" => "list#video"
    
-   get "oracle_b" => "list#oracle_b"
+  get "oracle_b" => "list#oracle_b"
    
-   get "counseling_b" => "list#counseling_b"
+  get "counseling_b" => "list#counseling_b"
    
-   # メール送信テスト用
-   mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
+  # 管理画面
+  namespace :admin do
+    root to: "cards#index"
+    resources :cards
+  end
    
-  end 
+  # メール送信テスト用
+  mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
+end 
 
