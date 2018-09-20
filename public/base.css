@@ -41,7 +41,14 @@ p {
   margin-left: 20px;
   margin-bottom: 5px;
   margin-right: 20px;
-  }
+}
+
+/* https://handywebdesign.net/2017/11/two-ways-to-recognize-a-height-of-floating-object/ */
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
 
 .headr-list {
   background-color: #9887e0;

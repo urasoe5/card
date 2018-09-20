@@ -1,16 +1,16 @@
-
-  <div>
-
-  <div class="wrap">
-  <div class="box4">
-  <div class="box5">
+<div class="wrap">
+  <div class="box-bg"></div>
+  <div class="box-content">
     <div class="content-heder">
       <h1>【不安】</h1>
     </div>
 
-    <div class="main">
+    <div class="clearfix">
       
-      <img src="img/fuan.png" width="250px"  height="404px" class="card">
+      <!--<img src="img/fuan.png" width="250px"  height="404px" class="card">-->
+      <%= image_tag @oracle_card.image_url, size: "250x404", class: "card" %>
+      <%= @oracle_card.description %>
+      <!--
       <p class="p">
        不安。不安と言う感情は、五大感情（楽しみ・嫌気・悲しみ・恐れ・怒り）の恐れの中にあるパーツの一つです。
        このカードを引いたあなたは、訪れるかもしれない脅威への不安を感じていたり、又は周りで不安を感じていたりする人の影響を受けていたりするのではないでしょうか？
@@ -40,34 +40,29 @@
       そんな、不安を感じている時に手助けしてくれるのが、聖なる植物のエッセンスです。このカードで助っ人の役目を果たしてくれるのが、《ラベンダー》です。ラベンダーは、心を鎮めて落ち着かさせてくれる、多面性を持つエッセンスです。あらゆる種類の問題に効き目を発揮します。宗教的な部分でも伝統的に使われてきた植物でもあります。
       今日でも教会の香の調合として使われています。
     </p>
-      
-    </div>
+    -->
+    </div><!-- main -->
+    
+  </div><!-- box-content -->
+</div><!-- wrap -->
 
-  <div class="content-main">
-
-  </div>
-
-  </div><!-- wrap -->
-  </div><!-- box4 -->
-  </div><!-- box5 -->
-  <div class="box6">
-    <footer id="footer">
-      <div class="footer">
-        <div class="footer-logo"><h1><a href="question">比嘉行介</a><h1></div>
-          <div class="footer-list">
-            <ul>
-              <li class="botan"><a href="index">トップ</a></li>
-              <li class="botan"><a href="conference">会議</a></li>
-              <li class="botan"><a href="incense">お香</a></li>
-              <li class="botan"><a href="counseling">セッション</a></li>
-              <li class="botan"><a href="oracle">占い</a></li>
-              <li class="botan"><a href="video">動画</a></li>
-              <li class="botan"><a href="question">質問</a></li>
-            </ul>
-          </div>
+<div class="box-footer">
+  <footer id="footer">
+    <div class="footer">
+      <div class="footer-logo"><h1><a href="question">比嘉行介</a><h1></div>
+        <div class="footer-list">
+          <ul>
+            <li class="botan"><a href="index">トップ</a></li>
+            <li class="botan"><a href="conference">会議</a></li>
+            <li class="botan"><a href="incense">お香</a></li>
+            <li class="botan"><a href="counseling">セッション</a></li>
+            <li class="botan"><a href="oracle">占い</a></li>
+            <li class="botan"><a href="video">動画</a></li>
+            <li class="botan"><a href="question">質問</a></li>
+          </ul>
         </div>
       </div>
-    </footer>
-  </div><!-- box6 -->
-  </div><!-- body_b -->
+    </div>
+  </footer>
+</div><!-- box-footer -->
   

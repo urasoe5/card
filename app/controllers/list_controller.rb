@@ -120,7 +120,8 @@ class ListController < ApplicationController
   end 
   
   def oracle_b
-      render template: "card/oracle_b"
+    @oracle_card = OracleCard.offset(rand(OracleCard.count)).first
+    render template: "card/oracle_b"
   end 
   
   def counseling_b
