@@ -33,8 +33,8 @@ Rails.application.routes.draw do
    
   # 管理画面
   namespace :admin do
-    root to: "cards#index"
-    resources :cards
+    root to: "oracle_cards#index"
+    resources :oracle_cards
   end
    
   # メール送信テスト用

@@ -1,0 +1,9 @@
+<tr>
+  <td><%= oracle_card.id %></td>
+  <td>
+    <% if not oracle_card.image.file.nil? %>
+      <%= image_tag oracle_card.image_url, width: "200" %>
+    <% end %>
+  </td>
+  <td><%= oracle_card.description %></td>
+</tr>

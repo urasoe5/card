@@ -7,7 +7,7 @@
     <div class="pull-left">
     </div>
     <div class="pull-right">
-      <%= link_to new_admin_card_path, { class: "btn btn-default btn-sm" } do %>
+      <%= link_to new_admin_oracle_card_path, { class: "btn btn-default btn-sm" } do %>
         <i class="fa fa-plus"></i>
         新規作成
       <% end %>
@@ -23,6 +23,8 @@
           <th>
         </tr>
       </thead>
+
+      <%= render @oracle_cards %>
     </table>
   </div>
 </div>

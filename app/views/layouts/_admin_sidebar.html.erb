@@ -2,12 +2,12 @@
 <ul class="sidebar-menu" data-widget="tree">
   <li class="header">メイン</li>
   <!-- Optionally, you can add icons to the links -->
-  <% if request.path_info == admin_cards_path %>
+  <% if request.path_info == admin_oracle_cards_path %>
     <li class="active">
   <% else %>
     <li>
   <% end %>
-    <%= link_to admin_cards_path do %>
+    <%= link_to admin_oracle_cards_path do %>
       <i class="fa fa-link"></i> <span>カード一覧</span>
     <% end %>
   </li>
