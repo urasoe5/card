@@ -7,3 +7,4 @@ ja:
         image: カード画像
         title: タイトル
         description: 説明
+        helper_description: ヘルパー説明

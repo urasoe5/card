@@ -1,0 +1,33 @@
+<%= form_for([ :admin, oracle_card ], html: { class: "form-horizontal" }) do |f| %>
+  <div class="form-group">
+    <%= f.label :image, "", class: "col-sm-2 control-label" %>
+    <div class="col-sm-5">
+      <%= f.file_field :image %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :title, "", class: "col-sm-2 control-label" %>
+    <div class="col-sm-5">
+      <%= f.text_field :title, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :description, "", class: "col-sm-2 control-label" %>
+    <div class="col-sm-5">
+      <%= f.text_area :description, size: "100x15", class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :helper_description, "", class: "col-sm-2 control-label" %>
+    <div class="col-sm-5">
+      <%= f.text_area :description, size: "100x10", class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-5">
+      <%= f.submit class: "btn btn-info btn-sm" %>
+    </div>
+  </div>
+<% end %>
+
+  

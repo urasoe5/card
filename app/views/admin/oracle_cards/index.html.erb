@@ -17,10 +17,11 @@
     <table class="table table-borderd table-hover">
       <thead>
         <tr>
-          <th>ID</th>
-          <th>画像</th>
-          <th>タイトル</th>
-          <th>説明</th>
+          <th class="col-sm-1">ID</th>
+          <th class="col-sm-3"><%= t("activerecord.attributes.oracle_card.image") %></th>
+          <th class="col-sm-1"><%= t("activerecord.attributes.oracle_card.title") %></th>
+          <th class="col-sm-3"><%= t("activerecord.attributes.oracle_card.description") %></th>
+          <th class="col-sm-3"><%= t("activerecord.attributes.oracle_card.helper_description") %></th>
           <th></th>
         </tr>
       </thead>

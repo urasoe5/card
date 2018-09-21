@@ -21,6 +21,6 @@ class Admin::OracleCardsController < Admin::ApplicationController
   private
 
   def oracle_card_params
-    params.require(:oracle_card).permit(:image, :title, :description)
+    params.require(:oracle_card).permit(:image, :title, :description, :helper_description)
   end
 end

@@ -7,9 +7,17 @@
 
     <div class="clearfix">
       
-      <!--<img src="img/fuan.png" width="250px"  height="404px" class="card">-->
       <%= image_tag @oracle_card.image_url, size: "250x404", class: "card" %>
-      <%= @oracle_card.description.html_safe %>
+
+      <p class="p">
+        <%= @oracle_card.description.html_safe %>
+      </p>
+
+      <h2>【Helper】助っ人</h2>
+      
+      <p class="p">
+        <%= @oracle_card.helper_description&.html_safe %>
+      </p>
       
     </div><!-- main -->
     
