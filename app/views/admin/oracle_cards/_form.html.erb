@@ -1,4 +1,12 @@
 <%= form_for([ :admin, oracle_card ], html: { class: "form-horizontal" }) do |f| %>
+  <% if oracle_card.errors.any? %>
+    <ul>
+      <% oracle_card.errors.full_messages.each do |message| %>
+        <li><%= message %>
+      <% end %>
+    </ul>
+  <% end %>
+
   <div class="form-group">
     <%= f.label :image, "", class: "col-sm-2 control-label" %>
     <div class="col-sm-5">
@@ -20,7 +28,7 @@
   <div class="form-group">
     <%= f.label :helper_description, "", class: "col-sm-2 control-label" %>
     <div class="col-sm-5">
-      <%= f.text_area :description, size: "100x10", class: "form-control" %>
+      <%= f.text_area :helper_description, size: "100x10", class: "form-control" %>
     </div>
   </div>
   <div class="form-group">

@@ -6,6 +6,10 @@
     <% end %>
   </td>
   <td><%= oracle_card.title %></td>
-  <td><%= oracle_card.description %></td>
-  <td><%= oracle_card.helper_description %></td>
+  <td><%= oracle_card.description.truncate(200) %></td>
+  <td><%= oracle_card.helper_description.truncate(200) %></td>
+  <td class="text-right">
+    <%= link_to "編集", edit_admin_oracle_card_path(oracle_card), class: "btn btn-default btn-sm" %>
+    <%= link_to "削除", [ :admin, oracle_card ], method: :delete, data: { confirm: "本当に削除しますか？" }, class: "btn btn-default btn-sm" %>
+  </td>
 </tr>
