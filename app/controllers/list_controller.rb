@@ -4,6 +4,18 @@ class ListController < ApplicationController
       #render template: "card/index"
       render template: "statics/index"
   end
+
+  def painting
+    render template: "statics/painting"
+  end
+
+  def work
+    render template: "statics/work"
+  end
+
+  def profile
+    render template: "statics/profile"
+  end
   
   def conference
       render template: "card/conference"
