@@ -1,29 +1,47 @@
+<!DOCTYPE html>
 <html>
- <!DOCTYPE html>
-  <head>
-    <title>orakurucard</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
-    <link rel="stylesheet" type="text/css" href="base.css">
-  </head>
-  <body class="body_a">
-  <div>
-    <div>
-      <ul class="headr-list">
-        <div>
-          <li class="botan"><a href="index"><img src="img/botan_top.png" border="0" onMouseOver="this.src='img/botan_top_2.png'" onMouseOut="this.src='img/botan_top.png'" /></a></li>
-          <li class="botan"><a href="conference"><img src="img/botan_kaigi.png" border="0" onMouseOver="this.src='img/botan_kaigi_2.png'" onMouseOut="this.src='img/botan_kaigi.png'" /></a></li>
-          <li class="botan"><a href="incense"><img src="img/botan_okou.png" border="0" onMouseOver="this.src='img/botan_okou_2.png'" onMouseOut="this.src='img/botan_okou.png'" /></a></li>
-          <li class="botan"><a href="counseling"><img src="img/botan_sessyon.png" border="0" onMouseOver="this.src='img/botan_sessyon_2.png'" onMouseOut="this.src='img/botan_sessyon.png'" /></a></li>
-          <li class="botan"><a href="oracle"><img src="img/botan_uranai.png" border="0" onMouseOver="this.src='img/botan_uranai_2.png'" onMouseOut="this.src='img//botan_uranai.png'" /></a></li>
-          <li class="botan"><a href="video"><img src="img/botan_vido.png" border="0" onMouseOver="this.src='img/botan_vido_2.png'" onMouseOut="this.src='img//botan_vido.png'" /></a></li>
-          <li class="botan"><a href="question"><img src="img/botan_situmon.png" border="0" onMouseOver="this.src='img/botan_situmon_2.png'" onMouseOut="this.src='img/botan_situmon.png'" /></a></li>
-        </div>
-      </ul>
-    </div>
-    </div>
-    <%=yield %><!-- box12   <li class="botan"><a href="video"><img src="img/botan_vido.png" border="0" onMouseOver="this.src='img/botan_vido_2.png'" onMouseOut="this.src='img/botan_vido.png'" /></a></li>-->
-  </body>
-  </html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="曼荼羅素材と曼荼羅塗り絵の素材のページです">
+  
+  <title>曼荼羅素材</title>
+  
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <link rel="stylesheet" type="text/css" href="base.css">
+</head>
+<body>
+  <div class="headr">
+  <div class="headr-title">
+    <img src="img/title.jpg">
+  </div>
+  <div class="headr-list">
+  <ul>
+    <li class="botan"><a href="index.html">曼荼羅素材</a></li>
+    <li class="botan"><a href="painting.html">曼荼羅塗り絵素材</a></li>
+    <li class="botan"><a href="work.html">他の作品集</a></li>
+    <li class="botan"><a href="profile.html">プロフィール</a></li>
+  </ul>
+  </div>
+  </div> <!-- head -->
+
+  <%= yield %>
+  
+  <div class="footer">
+  <div class="footer-logo">
+    <a href="profile.html">洲鎌直喜</a>
+  </div>
+  <div class="footer-list">
+  <ul>
+    <li class="botan"><a href="index.html">曼荼羅素材</a></li>
+    <li class="botan"><a href="painting.html">曼荼羅塗り絵</a></li>
+    <li class="botan"><a href="work.html">他の作品集</a></li>
+    <li class="botan"><a href="profile.html">プロフィール</a></li>
+  </ul>
+  </div>
+  </div><!-- footer -->
+</body>
+</html>

@@ -1,7 +1,8 @@
 # coding: utf-8
 class ListController < ApplicationController
   def index
-      render template: "card/index"
+      #render template: "card/index"
+      render template: "statics/index"
   end
   
   def conference
