@@ -3,7 +3,7 @@
     <% @ids.each_with_index do |id, i| %>
       <div class="col-sm-3 bg">
         <img src="img/no/no<%= @type_id %>-<%= i + 1 %>.png" class="card-img-top" alt="番号画像 <%= i + 1 %>">
-        <a href="/<%= @type %>/<%= id %>"><img src="/img/<%= @type %>/<%= id %>-t.png" class="card-img-top" alt="曼荼羅画像"></a>
+        <a href="/<%= @type %>/<%= i + 1 %>"><img src="/img/<%= @type %>/<%= id %>-t.png" class="card-img-top" alt="曼荼羅画像"></a>
         
       </div><!-- col -->
     <% end %>
