@@ -32,24 +32,30 @@ class ListController < ApplicationController
 
   # 拡大画面
   def mandara_show
-    @id = MANDARA_IDS[params[:id].to_i - 1]
+    @id = params[:id].to_i
+    @image_id = MANDARA_IDS[@id - 1]
     @type = "mandara"
+    @type_id = 1
     @no_header = true
     
     render template: "statics/show"
   end
 
   def painting_show
-    @id = PAINTING_IDS[params[:id].to_i - 1]
+    @id = params[:id].to_i
+    @image_id = PAINTING_IDS[@id - 1]
     @type = "painting"
+    @type_id = 2
     @no_header = true
     
     render template: "statics/show"
   end
 
   def work_show
-    @id = WORK_IDS[params[:id].to_i - 1]
+    @id = params[:id].to_i
+    @image_id = WORK_IDS[@id - 1]
     @type = "work"
+    @type_id = 3
     @no_header = true
     
     render template: "statics/show"
