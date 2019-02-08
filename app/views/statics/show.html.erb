@@ -1,0 +1,21 @@
+<section class="container">
+  <div class="row">
+    <div class="col-sm-1 bg">
+    </div>
+    
+    <div class="col-sm-10 bg">
+      <h5>画像Ｎｏ１－<%= @id %></h5>
+      <p>画像にマウスを当てて右クリック画像を保存でダウンロードできます、画像はフリー素材なのでダウンロードは無料で誰でもできます但し印刷した画像を送って欲しい場合は送料別で５００円のお値段になります</p>
+      <% if @type == "mandara" %>
+      <a href="/">
+      <% else %>
+      <a href="/<%= @type %>">
+      <% end %>
+        <img src="/img/<%= @type %>/<%= @id %>.png" class="card-img-top fluid" alt="曼荼羅画像">
+      </a>
+    </div>
+
+    <div class="col-sm-1 bg">
+    </div>
+  </div>
+</section>

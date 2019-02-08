@@ -1,16 +1,58 @@
-# coding: utf-8
 class ListController < ApplicationController
+  MANDARA_IDS = [ 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83 ]
+  PAINTING_IDS = [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ]
+  WORK_IDS = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ]
+  
   def index
-      #render template: "card/index"
-      render template: "statics/index"
+    @ids = MANDARA_IDS
+    @type = "mandara"
+    @type_id = 1
+      
+    #render template: "card/index"
+    render template: "statics/index"
   end
 
-  def painting
-    render template: "statics/painting"
+  def painting_index
+    @ids = PAINTING_IDS
+    @type = "painting"
+    @type_id = 2
+    
+    #render template: "statics/painting"
+    render template: "statics/index"
   end
 
-  def work
-    render template: "statics/work"
+  def work_index
+    @ids = WORK_IDS
+    @type = "work"
+    @type_id = 3
+    
+    #render template: "statics/work"
+    render template: "statics/index"
+  end
+
+  # 拡大画面
+  def mandara_show
+    @id = MANDARA_IDS[params[:id].to_i - 1]
+    @type = "mandara"
+    @no_header = true
+    
+    render template: "statics/show"
+  end
+
+  def painting_show
+    @id = PAINTING_IDS[params[:id].to_i - 1]
+    @type = "painting"
+    @no_header = true
+    
+    render template: "statics/show"
+  end
+
+  def work_show
+    @id = WORK_IDS[params[:id].to_i - 1]
+    @type = "work"
+    @no_header = true
+    
+    render template: "statics/show"
   end
 
   def profile
@@ -141,4 +183,4 @@ class ListController < ApplicationController
       render template: "card/counseling_b"
   end 
   
-  end 
+end 

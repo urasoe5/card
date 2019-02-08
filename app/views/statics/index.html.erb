@@ -1,49 +1,12 @@
-<div class="body-top">
-<div class="body-no">
-  <h1>画像をクリックすると拡大画面に変わります</h1>
-</div>
+<section class="container">
+  <div class="row">
+    <% @ids.each_with_index do |id, i| %>
+      <div class="col-sm-3 bg">
+        <img src="img/no/no<%= @type_id %>-<%= i + 1 %>.png" class="card-img-top" alt="番号画像 <%= i + 1 %>">
+        <a href="/<%= @type %>/<%= id %>"><img src="/img/<%= @type %>/<%= id %>-t.png" class="card-img-top" alt="曼荼羅画像"></a>
+        
+      </div><!-- col -->
+    <% end %>
+  </div><!-- /row -->
+</section>
 
-<div class="body-no">
-  <img src="img/no/no1-12.png" width="200px" height="30px" alt="番号画像" class="list">
-  <img src="img/no/no1-11.png" width="200px" height="30px" alt="番号画像" class="list">
-  <img src="img/no/no1-10.png" width="200px" height="30px" alt="番号画像" class="list">
-</div>
-  <div class="body-list">
-  <a href="matter/mandaramatter12.html"><img src="img/mandara/83-a.png" width="220px" height="220px" alt="曼荼羅画像"></a>
-  <a href="matter/mandaramatter11.html"><img src="img/mandara/82-a.png" width="220px" height="220px" alt="曼荼羅画像"></a>
-  <a href="matter/mandaramatter10.html"><img src="img/mandara/81-a.png" width="220px" height="220px" alt="曼荼羅画像"></a>
-</div>
-
-<div class="body-no">
-  <img src="img/no/no1-9.png" width="200px" height="30px" alt="番号画像" class="list">
-  <img src="img/no/no1-8.png" width="200px" height="30px" alt="番号画像" class="list">
-  <img src="img/no/no1-7.png" width="200px" height="30px" alt="番号画像" class="list">
-</div>
-<div class="body-list">
-  <a href="matter/mandaramatter9.html"><img src="img/mandara/80-a.png" width="220px" height="220px" alt="曼荼羅画像"></a>
-  <a href="matter/mandaramatter8.html"><img src="img/mandara/79-a.png" width="220px" height="220px" alt="曼荼羅画像"></a>
-  <a href="matter/mandaramatter7.html"><img src="img/mandara/78-a.png" width="220px" height="220px" alt="曼荼羅画像"></a>
-</div>
-
-<div class="body-no">
-  <img src="img/no/no1-6.png" width="200px" height="30px" alt="番号画像" class="list">
-  <img src="img/no/no1-5.png" width="200px" height="30px" alt="番号画像" class="list">
-  <img src="img/no/no1-4.png" width="200px" height="30px" alt="番号画像" class="list">
-</div>
-<div class="body-list">
-  <a href="matter/mandaramatter6.html"><img src="img/mandara/77-a.png" width="220px" height="220px" alt="曼荼羅画像"></a>
-  <a href="matter/mandaramatter5.html"><img src="img/mandara/76-a.png" width="220px" height="220px" alt="曼荼羅画像"></a>
-  <a href="matter/mandaramatter4.html"><img src="img/mandara/75-a.png" width="220px" height="220px" alt="曼荼羅画像"></a>
-</div>
-
-<div class="body-no">
-  <img src="img/no/no1-3.png" width="200px" height="30px" alt="番号画像" class="list">
-  <img src="img/no/no1-2.png" width="200px" height="30px" alt="番号画像" class="list">
-  <img src="img/no/no1-1.png" width="200px" height="30px" alt="番号画像" class="list">
-</div>
-<div class="body-list">
-  <a href="matter/mandaramatter3.html"><img src="img/mandara/74-a.png" width="220px" height="220px" alt="曼荼羅画像"></a>
-  <a href="matter/mandaramatter2.html"><img src="img/mandara/73-a.png" width="220px" height="220px" alt="曼荼羅画像"></a>
-  <a href="matter/mandaramatter1.html"><img src="img/mandara/72-a.png" width="220px" height="220px" alt="曼荼羅画像"></a>
-</div>
-</div><!-- body-top -->

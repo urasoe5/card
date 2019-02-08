@@ -1,180 +1,46 @@
-body{
-    position: absolute;
-    top: 560px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    margin: auto;
-    width: 880px;
-    height: 1500px;
+
+.btm a{
+  color: #ffffff;
+  text-decoration:none;
 }
 
-li{
-    float: left;
-    list-style: none;
+
+header{
+ background-color: #b0a083; 
 }
 
-a{ 
-    text-decoration: none;
-    color: #00ffaa; 
+.bg{
+  background-color: #d5b987;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
-.headr{
-    background-color: #36300b;
-    height: 470px;
-    width: 880px;
+.bgme{
+  background-color: #d5b987;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+}
+.bgf{
+  background-color: #d5b987;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+ 
+
+input{
+  width: 200px;
+
 }
 
-.headr-list li{
-    padding-top: 10px;
-    padding-left: 30px;
-}
+textarea{
+ width: 200px;
+ height: 150px;
 
-.body-top{
-    background-color: #66672b;
-    height:1350px;
-    width: 830px;
-    padding-top: 20px;
-    padding-left: 50px;
-}
-
-.body-no h1{
-    font-size: 20px;
-    color: #36300b;
-    padding-top: 10px;
-    padding-left:50px
-}
-
-.body-no {
-    float: left;
-    padding-left: 45px;
-    padding-bottom: 20px;
-}
-
-.body-no  img{
-    padding-right: 30px;
-}
-
-.body-list {
-    float: left;
-    padding-left: 15px;
-}
-.body-list img{
-    badding-top: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 30px;
-}
-
-.body-painting{
-    background-color: #a6a847;
-    height:1350px;
-    width: 870px;
-    padding-top: 20px;
-    padding-left: 10px;
-}
-
-.body-work{
-    background-color: #a6a847;
-    height:1500px;
-    width: 870px;
-    padding-top: 20px;
-    padding-left: 10px;
-}
-
-.body-profile{
-    background-color: #4e9d95;
-    height:1000px;
-    width: 830px;
-    padding-top: 20px;
-    padding-left: 50px;
-    marginbottm: 0px;
-}
-
-.profile h1{
-    font-size: 20px;
-    color: #333366;
-    padding-top: 10px;
-    padding-left:20px
-}
-
-.pp {
-    font-size: 15px;
-    color: #333366;
-    padding-top: 10px;
-    padding-left: 170px
 }
 
 .footer{
-    background-color: #36300b;
-    height: 100px;
-    width: 880px;
+background-color:  #b0a083;
 }
-
-.footer-logo{
-    padding-top: 20px;
-    padding-left: 30px;
-}
-
-.footer-list{
-    float: right;
-    padding-left: 30px;
-    padding-right: 100px;
-}
-
-.footer-list li{
-    font-size: 15px;
-    padding-left: 40px;
-}
-
-.contact-error-message {
-    margin-top: 10px;
-    margin-left: 50px;
-    color: red;
-}
-
-.contact-content{
-    margin-top: 10px;
-    margin-left: 50px;
-}
-
-/* inputとtextareaのCSSを指定してください*/
-input {
-    width: 400px;
-    height: 50px;
-    margin-top: 10px;
-    margin-left: 50px;
-    margin-bottom: 30px;
-    padding: 20px;
-    font-size: 18px;
-    border: 1px solid;
-}
-
-textarea {
-    width: 400px;
-    height: 300px;
-    margin-top: 10px;
-    margin-left: 50px;
-    margin-bottom: 30px;
-    padding: 20px;
-    font-size: 18px;
-    border: 1px solid;
-}
-
-input.radio {
-    width: 20px;
-    height: 14px;
-    margin-top: 10px;
-    margin-left: 50px;
-    margin-bottom: 20px;
-    padding: 10px;
-    font-size: 20px;
-    border: 1px solid;
-}
-
-/* contact-submitのCSSを指定してください */
-.contact-submit {
-    background-color: #babab7;
-    color: #656c50;
-}
-

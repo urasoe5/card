@@ -1,47 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="曼荼羅素材と曼荼羅塗り絵の素材のページです">
-  
-  <title>曼荼羅素材</title>
-  
+  <meta name="keywords" content="曼荼羅アートギャラリーひとつ">
+  <meta name="description" content="曼荼羅アートギャラリー「ひとつ」で創作した曼荼羅に触れて貰い曼荼羅の魅力を再発見する為のサイトです、オリジナル曼荼羅や塗り絵、曼荼羅を使用したアート作品を紹介したり、占いゲームなどをプレイしてもらいます">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>曼荼羅アートギャラリー「ひとつ」</title>
+
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
-  <link rel="stylesheet" type="text/css" href="base.css">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/base.css">
 </head>
+
 <body>
-  <div class="headr">
-  <div class="headr-title">
-    <img src="img/title.jpg">
-  </div>
-  <div class="headr-list">
-  <ul>
-    <li class="botan"><a href="/">曼荼羅素材</a></li>
-    <li class="botan"><a href="painting">曼荼羅塗り絵素材</a></li>
-    <li class="botan"><a href="work">他の作品集</a></li>
-    <li class="botan"><a href="profile">プロフィール</a></li>
-  </ul>
-  </div>
-  </div> <!-- head -->
+  <% if @no_header != true %>
+  <header class="container">
+    <div class="row no-qutters">
+      <div class="col">
+        <div class="headr-title">
+          <img src="img/title-b.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+      </div>
+    </div>
+    <div class="btm">
+      <a href="/" class="btn btn-outline-warning">曼荼羅塗</a>
+      <a href="/painting" class="btn btn-outline-warning">曼荼羅塗り絵</a>
+      <a href="/work" class="btn btn-outline-warning">他の作品</a>
+      <a href="/oracle" class="btn btn-outline-warning">占い</a>
+      <a href="/profile" class="btn btn-outline-warning">自己紹介</a>
+    </div>
+  </header>
+  <% end %>
 
   <%= yield %>
   
-  <div class="footer">
-  <div class="footer-logo">
-    <a href="profile.html">洲鎌直喜</a>
-  </div>
-  <div class="footer-list">
-  <ul>
-    <li class="botan"><a href="/">曼荼羅素材</a></li>
-    <li class="botan"><a href="painting">曼荼羅塗り絵素材</a></li>
-    <li class="botan"><a href="work">他の作品集</a></li>
-    <li class="botan"><a href="profile">プロフィール</a></li>
-  </ul>
-  </div>
-  </div><!-- footer -->
+  <footer class="container">
+    <div class="row">
+      <div class="col footer">
+        <div class="btm">
+          <a href="/" class="btn btn-outline-warning">曼荼羅塗</a>
+          <a href="/painting" class="btn btn-outline-warning">曼荼羅塗り絵</a>
+          <a href="/work" class="btn btn-outline-warning">他の作品</a>
+          <a href="/oracle" class="btn btn-outline-warning">占い</a>
+          <a href="/profile" class="btn btn-outline-warning">自己紹介</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
 </body>
 </html>

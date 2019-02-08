@@ -3,10 +3,15 @@ Rails.application.routes.draw do
   root to: "list#index"
 
   get "index" => "list#index"
-  get "painting" => "list#painting"
-  get "work" => "list#work"
-  get "profile" => "list#profile"
+  get "painting" => "list#painting_index"
+  get "work" => "list#work_index"
+  
+  get "mandara/:id" => "list#mandara_show"
+  get "painting/:id" => "list#painting_show"
+  get "work/:id" => "list#work_show"
    
+  get "profile" => "list#profile"
+  
   get "conference" => "list#conference" 
    
   get "conference_b" => "list#conference_b"
