@@ -1,7 +1,7 @@
 class ListController < ApplicationController
-  MANDARA_IDS = [ 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83 ]
-  PAINTING_IDS = [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ]
-  WORK_IDS = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ]
+  MANDARA_IDS = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, ]
+  PAINTING_IDS = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, ]
+  WORK_IDS = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 , ]
   
   def index
     @ids = MANDARA_IDS
