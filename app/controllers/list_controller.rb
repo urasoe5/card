@@ -114,14 +114,14 @@ class ListController < ApplicationController
     end
 
     if @error_messages.size > 0
-      render template: "card/question"
+      render template: "statics/profile"
       return
     end
     
     # メール送信
     QuestionMailer.send_question(@email, @message).deliver
     
-    render template: "card/question_send_complete"
+    render template: "statics/question_send_complete"
   end 
   
   def order

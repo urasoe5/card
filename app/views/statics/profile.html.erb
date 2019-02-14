@@ -16,16 +16,25 @@
 <div class="row">
 <div class="col bgf">
     <form action="question_send" method="post">
-    <input type="hidden" name="authenticity_token" id="authenticity_token" value="SXojob1nZ2cSQvewK3CZsa/IiPLXlk9b9M5bKKYc3zvL6/jEcLaZJb/S6JVYwv4dnletK0eeVbZjYOHs7ajAQA==" />
-      <h3 class="section-title">お問い合わせ</h3>
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <h3 class="section-title">お問い合わせ</h3>
+
+    <% if not @error_messages.nil? and @error_messages.size > 0 %>
+      <ul class="contact-error-message">
+        <% @error_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    <% end %>
+    
       <p class="contact-content">メールアドレス（必須）</p>
-    <input name="email" type="text" value="">
+        <input name="email" type="text" value="<%= @email %>">
       <p class="contact-content">お問い合わせ内容（必須）</p>
-    <!-- <textarea>要素を追加してください -->
-    <textarea name="message"></textarea>
+        <!-- <textarea>要素を追加してください -->
+        <textarea name="message"><%= @message %></textarea>
       <p class="contact-content" >※必須項目は必ずご入力ください</p>
-    <!-- <input>要素を追加してください -->
-    <input class="contact-submit" type="submit" value="送信">
+        <!-- <input>要素を追加してください -->
+        <input class="contact-submit" type="submit" value="送信">
     </form>
 </div>
 </div>
