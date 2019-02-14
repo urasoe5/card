@@ -1,46 +1,22 @@
-<div class="wrap">
-  <div class="box-bg"></div>
-  <div class="box-content">
-    <div class="content-heder">
-      <h1>【<%= @oracle_card.title %>】</h1>
-    </div>
+<section class="container">
+<div class="row">
+<div class="col-sm-4 bgme">
+  <%= image_tag @oracle_card.image_url, class: "card-img-top" %>
+</div>
 
-    <div class="clearfix">
-      
-      <%= image_tag @oracle_card.image_url, size: "250x404", class: "card" %>
+<div class="col-sm-8 bg">
+<h2 class="mt-0">【<%= @oracle_card.title %>】</h5>
 
-      <p class="p">
-        <%= @oracle_card.description.html_safe %>
-      </p>
+<p>
+  <%= @oracle_card.description.html_safe %>
+</p>
 
-      <h2>【Helper】助っ人</h2>
-      
-      <p class="p">
-        <%= @oracle_card.helper_description&.html_safe %>
-      </p>
-      
-    </div><!-- main -->
-    
-  </div><!-- box-content -->
-</div><!-- wrap -->
+<h5>【Helper】助っ人</h5>
 
-<div class="box-footer">
-  <footer id="footer">
-    <div class="footer">
-      <div class="footer-logo"><h1><a href="question">比嘉行介</a><h1></div>
-        <div class="footer-list">
-          <ul>
-            <li class="botan"><a href="index">トップ</a></li>
-            <li class="botan"><a href="conference">会議</a></li>
-            <li class="botan"><a href="incense">お香</a></li>
-            <li class="botan"><a href="counseling">セッション</a></li>
-            <li class="botan"><a href="oracle">占い</a></li>
-            <li class="botan"><a href="video">動画</a></li>
-            <li class="botan"><a href="question">質問</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-</div><!-- box-footer -->
-  
+<p>
+  <%= @oracle_card.helper_description&.html_safe %>
+</p>
+
+</div>
+</div>
+</section>
