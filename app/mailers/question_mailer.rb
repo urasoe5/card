@@ -5,6 +5,6 @@ class QuestionMailer < ApplicationMailer
   def send_question(email, message)
     @email = email
     @message = message
-    mail(subject: "【大宇宙インセンス】お問い合わせ", to: "kyuuki0@gmail.com")
+    mail(subject: "曼荼羅サイトお問い合わせ", to: "urasoe5@gmail.com")
   end
 end
