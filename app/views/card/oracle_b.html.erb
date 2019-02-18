@@ -4,19 +4,21 @@
   <%= image_tag @oracle_card.image_url, class: "card-img-top" %>
 </div>
 
-<div class="col-sm-8 bg">
-<h2 class="mt-0">【<%= @oracle_card.title %>】</h5>
+<div class="col-sm-7 bg">
+<h4 class="mt-0">【<%= @oracle_card.title %>】</h4>
 
 <p>
   <%= @oracle_card.description.html_safe %>
 </p>
 
-<h5>【Helper】助っ人</h5>
+<h5>●●--この数字の意味--●●</h5>
 
 <p>
   <%= @oracle_card.helper_description&.html_safe %>
 </p>
 
+</div>
+<div class="col-sm-1 bg">
 </div>
 </div>
 </section>
