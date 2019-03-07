@@ -5,10 +5,12 @@ Rails.application.routes.draw do
   get "index" => "list#index"
   get "painting" => "list#painting_index"
   get "work" => "list#work_index"
-  
+  get "link" => "static#one"
+
   get "mandara/:id" => "list#mandara_show"
   get "painting/:id" => "list#painting_show"
   get "work/:id" => "list#work_show"
+
    
   get "profile" => "list#profile"
   
