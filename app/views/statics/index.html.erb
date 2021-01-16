@@ -1,12 +1,14 @@
-<section class="container">
-  <div class="row">
-    <% @ids.each_with_index do |id, i| %>
-      <div class="col-sm-3 bg">
-        <img src="img/no/no<%= @type_id %>-<%= i + 1 %>.png" class="card-img-top" alt="番号画像 <%= i + 1 %>">
-        <a href="/<%= @type %>/<%= i + 1 %>"><img src="/img/<%= @type %>/<%= id %>-t.png" class="card-img-top" alt="曼荼羅画像"></a>
-        
-      </div><!-- col -->
+<div class="container">
+  <div class="row box1">
+    <% @imgs.each do |i| %>
+      <div class="col-md-sm-3 card mt-1 ml-1 box2" style="width: 280px;">
+        <img src="img/mandara/<%= i %>.png" class="img-fluid shadow rounded mt-2 ml-2 mr-2" style="width: 265px; alt="...">
+        <div class="card-body">
+          <h6 class="card-title">曼荼羅ナンバー<%= i %></h6>
+          <a href="/mandara/<%= i %>.html" class="btn btn-info box3">拡大画面</a>
+        </div>
+      </div>
     <% end %>
-  </div><!-- /row -->
-</section>
+  </div>
+</div>
 

@@ -1,28 +1,22 @@
 <section class="container">
 <div class="row">
-<div class="col-sm-4 bgme">
+<div class="col-sm-4 bgme box2">
 <img src="img/72-1.png" class="card-img-top" alt="自己紹介画像">
 </div>
-<div class="col-sm-8 bgme">
+<div class="col-sm-8 bgme box2">
 <h5 class="mt-0">自己紹介</h5>
 <p>どうも管理人の洲鎌ですこのサイトの素材は無料素材になっています。<br>
 私は曼荼羅を中心にしたイラスト制作や電卓やタイマーなどのプログ<br>
 ラミングなどパソコンに関する知識をスカイプを使っていろいろ教えて<br>
 いますご希望の方はメッセージで連絡して下さい、いろいろな質問もＯＫ<br>
 です。相互リンクなども良ければ一緒にしましょうヨロシクお願いします</p>
-
-<p><a href="mailto:urasoe5@gmail.com">メールアドレスはこちら (urasoe5@gmail.com)</a></p>
-<p><a href="https://whowatch.tv/profile/w:urasoe17" target="_blank">「ふわっち」へ入ります</a></p>
-<!--<p><a href="https://note.mu/naodati">noteへ入ります</a></p>-->
-<p><a href="https://suzuri.jp/urasoe5" target="_blank">ネットショップ「ひとつ」へ入ります</a></p>
-<!--<p><a href="https://twitter.com/sugamanaokinao">ツィッターへ入ります</a></p>-->
-<p><a href="tel:08089639534" target="_blank">TEL: 080-8963-9534</a></p>
-
+<p><a href="https://suzuri.jp/urasoe17">ネットショップ「ひとつ」へ入ります</a></p>
+<p><a href="https://twitter.com/sugamanaokinao">ツィッターへ入ります</a></p>
 </div>
 </div>
 
-<div class="row">
-<div class="col-sm-4 bgf">
+<div class="row box1">
+<div class="col-sm-4 bgf box2">
     <form action="question_send" method="post">
     <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
     <h3 class="section-title">お問い合わせ</h3>
@@ -33,11 +27,11 @@
         <% end %>
       </ul>
     <% end %>
-      <div class="form-group">
+      <div class="form-group box2">
         <label for="exampleInputEmail1">メールアドレス（必須）</label>
         <input name="email" type="text" class="form-control" id="exampleInputEmail1" value="<%= @email %>">
       </div>
-      <div class="form-group">
+      <div class="form-group box2">
         <label for="exampleFormControlTextarea1">お問い合わせ内容（必須）</label>
         <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"><%= @message %></textarea>
       </div>
@@ -47,7 +41,7 @@
     </form>
 
 </div>
-<div class="col-sm-8 bg">
+<div class="col-sm-8 bg box2">
 </div>
 </div>
 </section>

@@ -28,49 +28,57 @@
 
   gtag('config', 'UA-47471078-2');
 </script>
-
+<style>
+    .box1{
+        background-color: rgb(206, 233, 165);
+    }
+    .box2{
+        background-color: rgb(187, 238, 167);
+        align-items: start;   
+    }
+    .box3{
+      background-color: rgb(128, 245, 208);
+    }
+    .box4{
+      background-color: rgb(190, 226, 235);
+    }
+    .box5{
+      background-color: rgb(171, 240, 164);
+    }
+</style>
 </head>
 
-<body>
+<body class="box4">
   <% if @no_header != true %>
-  <header class="container">
-    
-   <div class="row no-qutters">
-      <div class="col">
-        <div class="headr-title">
-          <a href="https://suzuri.jp/urasoe5"><img src="img/bana-title.gif" class="img-fluid" alt="Responsive image"></a>
-        </div>
-      </div>
-    </div>
+   <header class="container box1">
     <div class="row no-qutters">
       <div class="col">
         <div class="headr-title">
-          <img src="img/title-b.jpg" class="img-fluid" alt="Responsive image">
+          <img src="/img/top.jpg" class="img-fluid mt-2 rounded" alt="Responsive image">
         </div>
       </div>
     </div>
-    <div class="btm">
-      <a href="/" class="btn btn-outline-warning">曼荼羅塗</a>
-      <a href="/painting" class="btn btn-outline-warning">曼荼羅塗り絵</a>
-      <a href="/work" class="btn btn-outline-warning">他の作品</a>
-      <a href="/oracle" class="btn btn-outline-warning">占い</a>
-      <a href="/profile" class="btn btn-outline-warning">自己紹介</a>
+    <div class="row no-qutters btm box1 mt-1 ml-2">
+      <a href="/index" class="btn btn-info box5">曼荼羅</a>
+      <a href="/painting.html" class="btn btn-info box5">曼荼羅塗り絵</a>
+      <a href="/work" class="btn btn-info  box5">他の作品</a>
+      <a href="/oracle.html" class="btn btn-info  box5">占い</a>
+      <a href="/profile.html" class="btn btn-info  box5">自己紹介</a>
     </div>
-    
   </header>
   <% end %>
 
   <%= yield %>
   
-  <footer class="container">
+  <footer class="container box1">
     <div class="row">
-      <div class="col footer">
-        <div class="btm">
-          <a href="/" class="btn btn-outline-warning">曼荼羅塗</a>
-          <a href="/painting" class="btn btn-outline-warning">曼荼羅塗り絵</a>
-          <a href="/work" class="btn btn-outline-warning">他の作品</a>
-          <a href="/oracle" class="btn btn-outline-warning">占い</a>
-          <a href="/profile" class="btn btn-outline-warning">自己紹介</a>
+      <div class="col">
+        <div class="row no-qutters btm box1 mt-1 ml-2">
+        <a href="/" class="btn btn-info box5">曼荼羅塗</a>
+        <a href="/painting" class="btn btn-info box5">曼荼羅塗り絵</a>
+        <a href="/work" class="btn btn-info  box5">他の作品</a>
+        <a href="/oracle" class="btn btn-info  box5">占い</a>
+        <a href="/profile" class="btn btn-info  box5">自己紹介</a>
         </div>
       </div>
     </div>

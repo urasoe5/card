@@ -1,63 +1,29 @@
 class ListController < ApplicationController
-  MANDARA_IDS = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
-  PAINTING_IDS = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, ]
-  WORK_IDS = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 , ]
-  
   def index
-    @ids = MANDARA_IDS
-    @type = "mandara"
-    @type_id = 1
-
+    @imgs = [24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,]
     render template: "statics/index"
   end
-
   def painting_index
-    @ids = PAINTING_IDS
-    @type = "painting"
-    @type_id = 2
-    
-    #render template: "statics/painting"
-    render template: "statics/index"
+    @imgs2 = [12,11,10,9,8,7,6,5,4,3,2,1,]
+    render template: "statics/painting"
   end
-
   def work_index
-    @ids = WORK_IDS
-    @type = "work"
-    @type_id = 3
-    
-    #render template: "statics/work"
-    render template: "statics/index"
+    @imgs3 = [15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,]
+    render template: "statics/work"
   end
-
-  # 拡大画面
+  
+    #拡大画面
   def mandara_show
-    @id = params[:id].to_i
-    @image_id = MANDARA_IDS[@id - 1]
-    @type = "mandara"
-    @type_id = 1
-    @no_header = true
-    
-    render template: "statics/show"
+    @id = params[:id]
+    render template: "statics/show1"
   end
-
   def painting_show
-    @id = params[:id].to_i
-    @image_id = PAINTING_IDS[@id - 1]
-    @type = "painting"
-    @type_id = 2
-    @no_header = true
-    
-    render template: "statics/show"
+    @id = params[:id]
+    render template: "statics/show2"
   end
-
   def work_show
-    @id = params[:id].to_i
-    @image_id = WORK_IDS[@id - 1]
-    @type = "work"
-    @type_id = 3
-    @no_header = true
-    
-    render template: "statics/show"
+    @id = params[:id]
+    render template: "statics/show3"
   end
 
   def profile

@@ -1,0 +1,15 @@
+<div class="container box1">
+  <div class="row">
+    <div class="col-2">
+    </div>
+      <div class="col-8">
+        <img src="/img/work/<%= @id %>.png" class="img-fluid rounded shadow mt-1 mb-3">
+        <div>
+          <a href="/work" class="btn btn-info box3 mt-3">Go 戻る</a>
+          <a href="/work/<%= @id.to_i - 1 %>" class="btn btn-info box3 mt-3">Go 次へ</a>
+        </div>
+      </div>
+    <div class="col-2">
+    </div>
+  </div>
+</div>

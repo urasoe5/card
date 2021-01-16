@@ -1,59 +1,13 @@
-<section class="container">
-<div class="row">
-<div class="col-sm-3 bg">
-<img src="img/no/no3-12.png" class="card-img-top" alt="番号画像">
-<a href="workmatter/workmatter12.html"><img src="img/work-a/12-a.png" class="card-img-top" alt="曼荼羅画像"></a>
+<div class="container">
+  <div class="row box1">
+    <% @imgs3.each do |i| %>
+      <div class="col-md-sm-3 box2 card mt-1 ml-1" style="width: 280px;">
+        <img src="img/work/<%= i %>.png" class="img-fluid shadow rounded mt-2 ml-2 mr-2" style="width: 265px; alt="...">
+        <div class="card-body">
+          <h6 class="card-title">アートナンバー<%= i %></h6>
+          <a href="/work/<%= i %>" class="btn btn-info box3">拡大画面</a>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
-<div class="col-sm-3 bg">
-<img src="img/no/no3-11.png" class="card-img-top" alt="番号画像">
-<a href="workmatter/workmatter11.html"><img src="img/work-a/11-a.png" class="card-img-top" alt="曼荼羅画像"></a>
-</div>
-<div class="col-sm-3 bg">
-<img src="img/no/no3-10.png" class="card-img-top" alt="番号画像">
-<a href="workmatter/workmatter10.html"><img src="img/work-a/10-a.png" class="card-img-top" alt="曼荼羅画像"></a>
-</div>
-<div class="col-sm-3 bg">
-<img src="img/no/no3-9.png" class="card-img-top" alt="番号画像">
-<a href="workmatter/workmatter9.html"><img src="img/work-a/9-a.png" class="card-img-top" alt="曼荼羅画像"></a>
-</div>
-</div>
-
-<div class="row">
-<div class="col-sm-3 bg">
-<img src="img/no/no3-8.png" class="card-img-top" alt="番号画像">
-<a href="workmatter/workmatter8.html"><img src="img/work-a/8-a.png" class="card-img-top" alt="曼荼羅画像"></a>
-</div>
-<div class="col-sm-3 bg">
-<img src="img/no/no3-7.png" class="card-img-top" alt="番号画像">
-<a href="workmatter/workmatter7.html"><img src="img/work-a/7-a.png" class="card-img-top" alt="曼荼羅画像"></a>
-</div>
-<div class="col-sm-3 bg">
-<img src="img/no/no3-6.png" class="card-img-top" alt="番号画像">
-<a href="workmatter/workmatter6.html"><img src="img/work-a/6-a.png" class="card-img-top" alt="曼荼羅画像"></a>
-</div>
-<div class="col-sm-3 bg">
-<img src="img/no/no3-5.png" class="card-img-top" alt="番号画像">
-<a href="workmatter/workmatter5.html"><img src="img/work-a/5-a.png" class="card-img-top" alt="曼荼羅画像"></a>
-</div>
-</div>
-
-<div class="row">
-<div class="col-sm-3 bg">
-<img src="img/no/no3-4.png" class="card-img-top" alt="番号画像">
-<a href="workmatter/workmatter4.html"><img src="img/work-a/4-a.png" class="card-img-top" alt="曼荼羅画像"></a>
-</div>
-<div class="col-sm-3 bg">
-<img src="img/no/no3-3.png" class="card-img-top" alt="番号画像">
-<a href="workmatter/workmatter3.html"><img src="img/work-a/3-a.png" class="card-img-top" alt="曼荼羅画像"></a>
-</div>
-<div class="col-sm-3 bg">
-<img src="img/no/no3-2.png" class="card-img-top" alt="番号画像">
-<a href="workmatter/workmatter2.html"><img src="img/work-a/2-a.png" class="card-img-top" alt="曼荼羅画像"></a>
-</div>
-<div class="col-sm-3 bg">
-<img src="img/no/no3-1.png" class="card-img-top" alt="番号画像">
-<a href="workmatter/workmatter1.html"><img src="img/work-a/1-a.png" class="card-img-top" alt="曼荼羅画像"></a>
-</div>
-</div>
-
-</section>
