@@ -1,6 +1,6 @@
 class Admin::OracleCardsController < Admin::ApplicationController
   def index
-    @oracle_cards = OracleCard.all
+    @oracle_cards = OracleCard.all.order(:title)
   end
   
   def new
