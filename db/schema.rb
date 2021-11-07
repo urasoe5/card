@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2018_09_21_060432) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "oracle_cards", force: :cascade do |t|
     t.string "image"
     t.text "description"
