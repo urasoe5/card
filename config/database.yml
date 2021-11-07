@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: urasoe5_card_production
-  username: urasoe5_card
-  password: <%= ENV['SAMPLE_RAILS_BASE_DATABASE_PASSWORD'] %>
+  #username: urasoe5_card
+  #password: <%= ENV['SAMPLE_RAILS_BASE_DATABASE_PASSWORD'] %>
