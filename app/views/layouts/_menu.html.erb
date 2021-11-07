@@ -1,0 +1,19 @@
+<% yield :menu_setting %>
+
+<div class="row py-2 box1">
+  <div class="col">
+    <% class_non_active = "btn btn-info box5" %>
+    <% class_active = "btn btn-info box5 active" %>
+
+    <% [
+         [ "曼荼羅", "/index", :index ],
+         [ "曼荼羅塗り絵", "/painting", :painting ],
+         [ "他の作品", "/work", :work ],
+         [ "占い", "/oracle", :oracle ],
+         [ "自己紹介", "/profile", :profile ],
+       ].each do |menu| %>
+    
+      <%= link_to menu[0], menu[1], class: @menu == menu[2] ? class_active : class_non_active %>
+    <% end %>
+  </div>
+</div>

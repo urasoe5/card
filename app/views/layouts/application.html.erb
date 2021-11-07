@@ -50,38 +50,22 @@
 
 <body class="box4">
   <% if @no_header != true %>
-   <header class="container box1">
-    <div class="row no-qutters">
+  <header class="container box1">
+    <div class="row">
       <div class="col">
         <div class="headr-title">
           <img src="/img/top.jpg" class="img-fluid mt-2 rounded" alt="Responsive image">
         </div>
       </div>
     </div>
-    <div class="row no-qutters btm box1 mt-1 ml-2">
-      <a href="/index" class="btn btn-info box5">曼荼羅</a>
-      <a href="/painting.html" class="btn btn-info box5">曼荼羅塗り絵</a>
-      <a href="/work" class="btn btn-info  box5">他の作品</a>
-      <a href="/oracle.html" class="btn btn-info  box5">占い</a>
-      <a href="/profile.html" class="btn btn-info  box5">自己紹介</a>
-    </div>
+    <%= render "layouts/menu" %>
   </header>
   <% end %>
 
   <%= yield %>
   
-  <footer class="container box1 py-2">
-    <div class="row">
-      <div class="col">
-        <div class="row no-qutters btm box1 mt-1 ml-2">
-        <a href="/" class="btn btn-info box5">曼荼羅塗</a>
-        <a href="/painting" class="btn btn-info box5">曼荼羅塗り絵</a>
-        <a href="/work" class="btn btn-info  box5">他の作品</a>
-        <a href="/oracle" class="btn btn-info  box5">占い</a>
-        <a href="/profile" class="btn btn-info  box5">自己紹介</a>
-        </div>
-      </div>
-    </div>
+  <footer class="container box1">
+    <%= render "layouts/menu" %>
   </footer>
 
   <!-- Optional JavaScript -->
